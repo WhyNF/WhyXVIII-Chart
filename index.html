@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Analytic Tools</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>WHYXVII CHART</h1>
+    <p class="time" id="analysisTime"></p>
+    <p class="sub">Timeframe: 1H Analysis</p>
+
+    <div class="input-group">
+        <label>High Price (H)</label>
+        <input type="number" id="high" placeholder="Contoh: 5161">
+    </div>
+
+    <div class="input-group">
+        <label>Low Price (L)</label>
+        <input type="number" id="low" placeholder="Contoh: 5142">
+    </div>
+
+    <div class="input-group">
+        <label>Close Price (C)</label>
+        <input type="number" id="close" placeholder="Contoh: 5147">
+    </div>
+
+    <button onclick="analyze()">Analytic</button>
+
+    <div class="loading" id="loading">
+        <div class="chart-loader"></div>
+        <p>Analyzing...</p>
+    </div>
+
+    <div class="result" id="result">
+        <h2>— RESULT ANALYTIC —</h2>
+        <p>Pointed: <span id="pp"></span></p>
+        <p>Resistance : <span id="r1"></span></p>
+        <p>Support : <span id="s1"></span></p>
+        <p class="done">Done Analytic || WhyXVIII.</p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
